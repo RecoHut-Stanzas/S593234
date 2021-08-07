@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 def prefilter_items(data, take_n_popular=5000, item_features=None, exclude_popular=None, filter_weeks_no_sold=None):
     # Let's remove the most popular products (they will be bought anyway)
     if exclude_popular is not None:
